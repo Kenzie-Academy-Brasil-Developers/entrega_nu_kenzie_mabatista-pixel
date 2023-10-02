@@ -1,12 +1,36 @@
 .btn {
-    width: 8.0625rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 21.5rem;
     height: 3rem;
     border-radius: 8px;
     border: 2px solid var(--color-primary);
     padding: 0.8125rem 1.25rem 0.8125rem 1.25rem;
     color: var(--color-white);
     background-color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    transition: 0.4s;
 
+    &.remove {
+        width: 49px;
+        height: 19px;
+        background-color: var(--color-grey-2);
+        border-radius: 2px;
+        border: none;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 13.64px;
+        font-family: var(--font-primary);
+        color: #212529;
+
+
+    }
+    
     &:hover{
         background-color: var(--color-primary-2);
         color: var(--color-grey-1);

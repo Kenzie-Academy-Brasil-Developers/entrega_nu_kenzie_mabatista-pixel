@@ -1,11 +1,32 @@
+import { useState } from "react"
 import { HomePage } from "./pages/HomePage"
+import "./styles/index.scss"
 
 
 function App() {
 
+  const [listNotes, setListNotes] = useState([])
+
+  const addNote = (title, value, type) => {
+    const id = crypto.randomUUID();
+    const newNote = {title, value, type, id};
+    console.log(newNote)
+
+    setListNotes([...listNotes, {newNote}])
+  }
+
+  const removeNote = (id) => {
+    const filteredList = listNotes.filter((note) => {
+      if(note.id !== id) {
+        return note
+      }
+    } )
+    setListNotes(filteredList)
+  }
+
   return (
     <>
-      <HomePage/>
+      <HomePage listNotes={listNotes} addNote={addNote} removeNote={removeNote}/>
     </>
   )
 }

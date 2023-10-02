@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Input } from "../Input"
 import { Select } from "../Select"
 
-export const FinanceForm = () => {
+export const FinanceForm = ({addNote}) => {
 
     const [title, setTitle] = useState("")
     const [value, setValue] = useState("")
@@ -16,12 +16,14 @@ export const FinanceForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log({ title, message, type })
+
+        addNote(title, value, type )
 
         setTitle("")
         setValue("")
         setType("Entrada")
     }
+
 
     return (
         <section>
@@ -29,14 +31,14 @@ export const FinanceForm = () => {
             <form onSubmit={handleSubmit}>
 
                 <Input label="Descrição" placeholder="Digite aqui sua descrição" type="text" id="ftext" value={title} setValue={setTitle} />
-                <p><small>Ex: Compra de roupas</small></p>
+                <p className="helper"><small>Ex: Compra de roupas</small></p>
 
                 <Input label="Valor (R$)" placeholder="1" type="number" id="fnumber" value={value} setValue={setValue} />
 
 
                 <Select label="Tipo de valor" value={type} id="fselect" setValue={setType} options={selectOptions} />
 
-                <button>Inserir valor</button>
+                <button className="btn">Inserir valor</button>
 
             </form>
 
