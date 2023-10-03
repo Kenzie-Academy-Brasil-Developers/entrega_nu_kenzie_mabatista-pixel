@@ -33,7 +33,7 @@ export const FinanceForm = ({addNote}) => {
                 <Input label="Descrição" placeholder="Digite aqui sua descrição" type="text" id="ftext" value={title} setValue={setTitle} />
                 <p className="helper"><small>Ex: Compra de roupas</small></p>
 
-                <Input label="Valor (R$)" placeholder="1" type="number" id="fnumber" value={value} setValue={setValue} />
+                <Input label="Valor (R$)" placeholder="1" type="text" id="fnumber" value={value} setValue={setValue} />
 
 
                 <Select label="Tipo de valor" value={type} id="fselect" setValue={setType} options={selectOptions} />

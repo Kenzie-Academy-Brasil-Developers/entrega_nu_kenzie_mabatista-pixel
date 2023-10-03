@@ -1,5 +1,10 @@
-export const FinanceCard = ({ title, value, type, id, removeNote}) => {
-    console.log(removeNote)
+export const FinanceCard = ({ title, value, type, id, removeNote }) => {
+
+    // const formatedValue = value.toLocaleString('pt-BR', {
+    //     style: 'currency',
+    //     currency: 'BRL'
+    // });
+
     return (
         <div>
             <div>
@@ -7,8 +12,8 @@ export const FinanceCard = ({ title, value, type, id, removeNote}) => {
                 <p className="body"><small>{type}</small></p>
             </div>
             <div>
-                <p className="body">{value}</p>
-                <button onClick={() => removeNote(id)}  className="btn remove">Excluir</button>
+                <p className="body">R$ {value}</p>
+                <button onClick={() => removeNote(id)} className="btn remove">Excluir</button>
             </div>
         </div>
     )
