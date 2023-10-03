@@ -1,4 +1,5 @@
-export const FinanceCard = ({ title, value, type, id, removeNote }) => {
+export const FinanceCard = ({ title, value, type, id, removeNote}) => {
+    console.log(removeNote)
     return (
         <div>
             <div>
@@ -10,6 +11,5 @@ export const FinanceCard = ({ title, value, type, id, removeNote }) => {
                 <button onClick={() => removeNote(id)}  className="btn remove">Excluir</button>
             </div>
         </div>
-
     )
 }

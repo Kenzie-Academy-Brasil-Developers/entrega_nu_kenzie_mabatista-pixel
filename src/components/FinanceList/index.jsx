@@ -1,10 +1,12 @@
-import { FinanceCard } from "../FinanceCard"
+import { FinanceCard } from "../FinanceCard";
 
 export const FinanceList = ({ listNotes, removeNote }) => {
+    console.log(listNotes)
 
     return (
         <div>
             <h3 className="title3">Resumo financeiro</h3>
+            
             <ul>
                 {listNotes.map((note) => {
                     const { title, value, type, id } = note;

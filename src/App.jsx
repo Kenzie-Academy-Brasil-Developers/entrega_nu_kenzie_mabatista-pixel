@@ -9,10 +9,11 @@ function App() {
 
   const addNote = (title, value, type) => {
     const id = crypto.randomUUID();
-    const newNote = {title, value, type, id};
-    console.log(newNote)
+    console.log(id)
 
-    setListNotes([...listNotes, {newNote}])
+    const newNote = {title, value, type, id};
+
+    setListNotes([...listNotes, newNote])
   }
 
   const removeNote = (id) => {
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <>
-      <HomePage listNotes={listNotes} addNote={addNote} removeNote={removeNote}/>
+      <HomePage listNotes={listNotes} addNote={addNote} removeNote={removeNote} />
     </>
   )
 }

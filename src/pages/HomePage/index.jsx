@@ -11,7 +11,7 @@ export const HomePage = ({listNotes, addNote, removeNote}) => {
             <FinanceForm addNote={addNote}/>     
             <FinanceList listNotes={listNotes} removeNote={removeNote} />
         </main>  
-        {/* <Footer/> */}
+        <Footer listNotes={listNotes}/>
         </>
     )
 }
