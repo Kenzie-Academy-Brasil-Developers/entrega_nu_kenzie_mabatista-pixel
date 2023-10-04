@@ -1,6 +1,6 @@
 import { FinanceNumber } from "../../FinanceNumber";
 
-export const Footer = ({ listNotes }) => {
+export const Total = ({ listNotes }) => {
 
     const getSum = listNotes.length > 0 ? listNotes.reduce((accumulator, currentObject) => {
         return accumulator + currentObject.value;

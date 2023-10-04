@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Input } from "../Input"
 import { Select } from "../Select"
+import styles from "./style.module.scss"
 
 export const FinanceForm = ({addNote}) => {
 
@@ -21,12 +22,11 @@ export const FinanceForm = ({addNote}) => {
 
         setTitle("")
         setValue("")
-        setType("Entrada")
     }
 
 
     return (
-        <section>
+        <section className={styles.formBox}>
 
             <form onSubmit={handleSubmit}>
 

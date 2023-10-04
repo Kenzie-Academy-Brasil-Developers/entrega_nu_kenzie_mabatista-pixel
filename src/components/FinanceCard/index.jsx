@@ -1,3 +1,5 @@
+import styles from "./style.module.scss"
+
 export const FinanceCard = ({ title, value, type, id, removeNote }) => {
 
     // const formatedValue = value.toLocaleString('pt-BR', {
@@ -6,7 +8,7 @@ export const FinanceCard = ({ title, value, type, id, removeNote }) => {
     // });
 
     return (
-        <div>
+        <div className={styles.infoBox}>
             <div>
                 <h3 className="title3">{title}</h3>
                 <p className="body"><small>{type}</small></p>

@@ -1,0 +1,27 @@
+.formBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 355px;
+    height: 434px;
+    line-height: 35px;
+    margin-top: 25px;
+    background-color: var(--color-white);
+    border: 1px solid #00000020;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 19.625rem;
+        height: 22.625rem;
+        gap: 1rem;
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    button {
+        width: 314px;
+        height: 48px;
+    }
+}

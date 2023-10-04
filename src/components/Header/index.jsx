@@ -1,10 +1,11 @@
 import  logo  from "../../assets/logo.svg"
+import styles from "./styles.module.scss"
 
 export const Header = () => {
     return(
-        <header>
+        <header className={styles.headerBox}>
             <div>
-                <img className="logo" src={logo} alt="Nu Kenzie Logo" />
+                <img className={styles.logo} src={logo} alt="Nu Kenzie Logo" />
             </div>
         </header>
     )
