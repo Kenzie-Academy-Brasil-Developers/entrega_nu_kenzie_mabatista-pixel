@@ -6,7 +6,7 @@ export const Total = ({ total }) => {
         <div className={styles.numberContainer}>
             <div className={styles.numberBox}>
                 <h3 className="title3">Valor total:</h3>
-                <p className="title3">R${total}</p>
+                <p className="title3">{total.toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</p>
             </div>
             <p className="body"><small>O valor se refere ao saldo</small></p>
         </div>

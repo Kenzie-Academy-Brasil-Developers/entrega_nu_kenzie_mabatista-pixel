@@ -5,11 +5,36 @@
     justify-content: space-evenly;
     border-radius: 4px;
     background-color: var(--color-grey-1);
-    width: 22.1875rem;
-    height: 9.75rem;
+    width: 21.5625rem;
+    height: 8.5rem;
     gap: 1rem;
     border-left: 5px solid #03B898;
     line-height: 1.5625rem;
     padding: 0px 16px;
     margin-top: 20px;
+}
+
+@media (min-width:1024px) {
+
+    .infoBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 35rem;
+        height: 5.4375rem;
+        line-height: 40px;
+
+        .titleBox {
+            width: 337px;
+            height: 68px;
+
+            h3 {
+                margin: 0;
+            }
+        }
+
+
+    }
+
 }

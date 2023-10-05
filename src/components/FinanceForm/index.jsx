@@ -10,8 +10,8 @@ export const FinanceForm = ({addNote}) => {
     const [type, setType] = useState("Entrada")
 
     const selectOptions = [
-        { label: "Entrada", value: "entrada" },
-        { label: "Despesa", value: "despesa" }
+        { label: "Entrada", value: "Entrada" },
+        { label: "Despesa", value: "Despesa" }
     ]
 
 

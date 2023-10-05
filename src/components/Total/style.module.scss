@@ -1,12 +1,11 @@
 .numberContainer {
-    width: 355px;
+    width: 345px;
     height: 96px;
     border: 1px solid var(--color-grey-2);
     background-color: var(--color-white);
     border-radius: 4px;
     padding: 0px 1rem;
 }
-
 
 .numberBox {
     display: flex;
@@ -18,5 +17,12 @@
 
     p {
         color: var(--color-primary);
+    }
+}
+
+@media(min-width:1024px) {
+    .numberContainer {
+        margin-left: 100px;
+        margin-bottom: 50px;
     }
 }

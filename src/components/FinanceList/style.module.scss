@@ -1,6 +1,32 @@
 .cardList {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1.5rem;
+
+    @media (min-width:1024px) {
+
+        &{
+            margin-top: 39px;
+        }
+
+        h3 {
+            margin-left: 3.5rem;
+        }
+
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        gap: 1.8rem;
+
+        @media (min-width: 1024px) {
+            width: 35rem;
+            height: 28.25rem;
+            margin-left: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+
 }
+

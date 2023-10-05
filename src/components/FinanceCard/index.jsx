@@ -2,19 +2,14 @@ import styles from "./style.module.scss"
 
 export const FinanceCard = ({ title, value, type, id, removeNote }) => {
 
-    // const formatedValue = value.toLocaleString('pt-BR', {
-    //     style: 'currency',
-    //     currency: 'BRL'
-    // });
-
     return (
         <div className={styles.infoBox}>
-            <div>
+            <div className={styles.titleBox}>
                 <h3 className="title3">{title}</h3>
                 <p className="body"><small>{type}</small></p>
             </div>
-            <div>
-                <p className="body">R$ {value}</p>
+            <div className={styles.valueBox}>
+                <p className="body">{value.toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</p>
                 <button onClick={() => removeNote(id)} className="btn remove">Excluir</button>
             </div>
         </div>
