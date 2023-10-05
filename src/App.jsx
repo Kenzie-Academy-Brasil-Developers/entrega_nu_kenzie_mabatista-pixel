@@ -9,11 +9,10 @@ function App() {
 
   const addNote = (title, value, type) => {
     const id = crypto.randomUUID();
-    console.log(id)
 
-    const newNote = {title, value, type, id};
-
+    const newNote = {title, value: parseFloat(value), type, id};
     setListNotes([...listNotes, newNote])
+
   }
 
   const removeNote = (id) => {
