@@ -38,3 +38,9 @@
     }
 
 }
+
+.active {
+    @extend .infoBox;
+    border-left: 5px solid var(--color-grey-2);
+
+}
